@@ -1,12 +1,14 @@
 <?php
 /*
-Author: Eddie Machado
-URL: http://themble.com/bones/
+Author: Nate Mecham
+
 
 This is where you can drop your custom functions or
 just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
 */
+
+ob_start("ob_gzhandler");
 
 // LOAD BONES CORE (if you remove this, the theme will break)
 require_once( 'library/bones.php' );
@@ -243,7 +245,6 @@ function bones_fonts() {
 }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
-
 
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
