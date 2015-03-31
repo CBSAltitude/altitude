@@ -21,6 +21,16 @@ http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
 ******************************************************************/
 
 
+
+/*********************
+BACKGROUND TEXTURE / Color
+*********************/
+@mixin bg-texture($color:null){
+	background: url(../images/BG_texture_transparent.png) $color;	
+}
+
+
+
 /*********************
 TRANSITION
 *********************/

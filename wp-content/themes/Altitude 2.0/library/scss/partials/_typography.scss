@@ -28,17 +28,55 @@ FONT FACE (IN YOUR FACE)
   Be sure to remove the comment brackets.
 */
 
-/*  @font-face {
-      font-family: 'Font Name';
-      src: url('library/fonts/font-name.eot');
-      src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
+@font-face {
+      font-family: 'Proxima-Nova-Semibold';
+      src: url('library/fonts/Proxima-Nova-Semibold.eot');
+      src: url('library/fonts/Proxima-Nova-Semibold.eot?#iefix') format('embedded-opentype'),
+             url('library/fonts/Proxima-Nova-Semibold.woff') format('woff'),
+             url('library/fonts/Proxima-Nova-Semibold.ttf') format('truetype'),
+             url('library/fonts/Proxima-Nova-Semibold.svg#Proxima-Nova-Semibold') format('svg');
       font-weight: normal;
       font-style: normal;
   }
-*/
+
+@font-face {
+      font-family: 'Proxima-Nova-Regular';
+      src: url('library/fonts/Proxima-Nova-Regular.eot');
+      src: url('library/fonts/Proxima-Nova-Regular.eot?#iefix') format('embedded-opentype'),
+             url('library/fonts/Proxima-Nova-Regular.woff') format('woff'),
+             url('library/fonts/Proxima-Nova-Regular.ttf') format('truetype'),
+             url('library/fonts/Proxima-Nova-Regular.svg#Proxima-Nova-Regular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+
+
+ @font-face {
+      font-family: 'Cactus-Bold';
+      src: url('library/fonts/Cactus-Bold.eot');
+      src: url('library/fonts/Cactus-Bold.eot?#iefix') format('embedded-opentype'),
+             url('library/fonts/Cactus-Bold.woff') format('woff'),
+             url('library/fonts/Cactus-Bold.ttf') format('truetype'),
+             url('library/fonts/Cactus-Bold.svg#Cactus-Bold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+
+
+@font-face {
+  font-family: 'Signika-Light';
+  src: url('library/fonts/Signika-Light.eot');
+  src: url('library/fonts/Signika-Light.eot?#iefix') format('embedded-opentype'),
+         url('library/fonts/Signika-Light.woff') format('woff'),
+         url('library/fonts/Signika-Light.ttf') format('truetype'),
+         url('library/fonts/Signika-Light.svg#Signika-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 
 /*
@@ -49,14 +87,13 @@ I've edited it a bit, but it's a nice starting point.
 
 
 // font stacks
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif:        "Proxima-Nova-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$cactus:			"Cactus-Bold", sans-serif;
+$signika:			"Signika-Light",sans-serif;
+$proxima-reg:		"Proxima-Nova-Regular", sans-serif;
+$proxima-semi:		"Proxima-Nova-Semibold", sans-serif;
 
-/*
- i imported this one in the functions file so bones would look sweet.
- don't forget to remove it for your site.
-*/
-$lato:              'Lato', $sans-serif;
 
 /*
 some nice typographical defaults

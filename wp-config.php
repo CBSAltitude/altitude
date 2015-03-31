@@ -16,7 +16,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'altitude_2');
+define('DB_NAME', 'altitude_2015');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -68,13 +68,22 @@ $table_prefix  = 'wp_';
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
+
+// Tells WordPress to log everything to the /wp-content/debug.log file
+define('WP_DEBUG_LOG', true);
+
+// Doesn't force the PHP 'display_errors' variable to be on
+define('WP_DEBUG_DISPLAY', false);
+
+// Hides errors from being displayed on-screen
+@ini_set('display_errors', 0);
 
 /* That's all, stop editing! Happy blogging. */
 
-/** Absolute path to the WordPress directory. */
+/** Absolute path to the WordPress directory. 
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+	define('ABSPATH', dirname(__FILE__) . '/');*/
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

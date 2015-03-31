@@ -20,11 +20,11 @@
 
 					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 
-				</div>
+				</div><!-- end #inner-footer -->
 
 			</footer>
 
-		</div>
+		</div><!-- end #container -->
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>

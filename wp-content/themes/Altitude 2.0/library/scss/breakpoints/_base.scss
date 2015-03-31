@@ -16,7 +16,7 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $lato;
+	font-family: $sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
@@ -70,7 +70,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -255,19 +255,14 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			background-color: $white;
-			border-radius: 3px;
-			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
+			
 
 			header {
-				border-bottom: 1px solid $light-gray;
-				padding: 1.5em;
+				
 			}
 
 			footer {
-				padding: 1.5em;
-				border-top: 1px solid $light-gray;
+				
 
 				p {
 					margin: 0;
@@ -886,3 +881,12 @@ FOOTER STYLES
 
 
 	.copyright {}
+	
+	
+/*********************
+Test Styles
+*********************/	
+
+h1{
+	//font-family: "Signika-Light", sans-serif;
+}
